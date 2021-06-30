@@ -5,7 +5,8 @@ spring:
   application:
     name: mall-demo
   datasource:
-    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+#    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai # 开发环境
+    url: jdbc:mysql://47.98.238.35:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai # 生产环境
     username: root
     password: root
   thymeleaf:
@@ -26,4 +27,5 @@ logging:
 
 host:
   mall:
-   admin: http://localhost:8080
+#   admin: http://localhost:8080 # 开发环境
+   admin: http://47.98.238.35:8080 # 生产环境
